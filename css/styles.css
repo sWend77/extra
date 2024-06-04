@@ -1,0 +1,567 @@
+/* index -----------------------------------------------------------------------------------*/
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    background: rgb(218, 218, 218);
+    
+}
+
+.headerIndex { 
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: rgb(37, 37, 37)
+}
+
+.content-registro-login{
+    width: 230px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.ul-registro-login{
+    
+    height: 30px;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0 30px 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+.link-registro-inicio{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.link-secciones{
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(186, 166, 207);
+}
+
+.box-secciones-principales{
+    width: 100vw;
+    height: 30px;
+    margin: 0;
+    background-color: rgb(49, 49, 49);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    display: flex;
+    justify-content: center
+    
+}
+.ul-enlaces-secciones{
+    width: 400px;
+    height: 29px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(49,49,49)
+
+} 
+
+.titleIndex{
+    width: 180px;
+    height: 65px;
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(223, 188, 255);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 0 0 5px;
+}
+
+.buscador{
+    width: 230px;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.buscador-search{
+    width: 70%;
+    height: 40%;
+    margin: 10px 0 0 0;
+}
+
+.buscador-enviar{
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(179, 179, 179);
+    border-radius: 4px;
+    margin: 10px 0 0 5px;
+    background-color: rgb(189, 199, 233);
+}
+
+.grilla{
+    width: 100vw;
+    height: 810px;
+    margin: 0;
+    background-color: rgb(168, 168, 168);
+    display: grid;
+    grid-template-columns: 200px 800px 300px;
+    grid-template-rows: 350px 400px 60px;
+    grid-template-areas: 
+    ". contenedor-imagenes ."
+    ". contenedor-parrafo ."
+    "footer footer footer";
+    
+}
+
+/* Adaptacion movil index (para pantallas de 424px)---------------------------------------------- */
+
+@media (max-width: 424px) {
+    body {
+        justify-content: flex-start; 
+    }
+  
+    .headerIndex {
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+    }
+  
+    .content-registro-login {
+        width: 100%; 
+        flex-direction: row; 
+        justify-content: center; 
+    }
+  
+    .titleIndex {
+            margin: 10px 0; 
+    }
+  
+    .box-secciones-principales {
+        width: 100%; 
+    }
+  
+    .ul-enlaces-secciones {
+        width: 100%; 
+        justify-content: space-around; 
+    }
+  
+    .grilla {
+        width: 100%;
+        display: flex; 
+        flex-direction: column; 
+        height: auto; 
+    }
+  
+    .contenedor-imagenes,
+    .contenedor-parrafo {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+    
+    .contenedor-parrafo{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .img {
+        width: 100%; 
+        height: auto; 
+        margin: 5px 0; 
+    }
+  
+    #h2title{
+        width: 200px;
+        height: 130px;
+        margin: 0; 
+        text-align: center; 
+    }
+  
+    #parrafo-mobile {
+        width: 100%; 
+        height: 100%;
+        margin:0 20px 50px 20px ; 
+    }
+  
+    #footer.mobile {
+        width: 100%;
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    #text-mobile {
+        margin-left: 0; 
+    }
+  }
+/* ---------------------------------------------------------------------------------------------------- */
+.img{
+    width: 150px;
+    height: 100px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.primerh2{
+    color: rgb(151, 151, 151);
+    grid-area: h2;
+}
+
+.contenedor-imagenes{
+    width: 80%;
+    height: 85%;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    grid-area: contenedor-imagenes;
+}
+
+.contenedor-parrafo{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-area: contenedor-parrafo
+    
+}
+
+.titulo-bienvenida{
+    width: 200px;
+    color: rgb(80, 0, 133);
+    text-decoration: none;
+    margin: 0 0 300px 50px;
+}
+
+p{
+    width: 400px;
+    font-size: small;
+    padding: 0px;
+    margin: 0;
+}
+
+footer{
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(49,49,49);
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.redes{
+    height: 100%;
+    color: white;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.text{
+    width: 150px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-redes{
+    width: 50px;
+}
+
+.text-contact{
+    margin-left: 400px ;
+}
+
+/* resgistro/inicio --------------------------------------------------------------------------------*/
+
+main{
+    width: 100vw;
+}
+
+span{
+    font-style:italic;
+    font-weight: 750;
+    color: rgb(75, 0, 124);
+}
+
+h2 {
+    font:500;
+    text-align: center;
+    
+}
+
+h3{
+    font-size: large;
+    margin: 0;
+    text-align: center;
+}
+
+.cuadro-registro{ 
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+form {
+    background: rgb(245, 245, 245);
+    height: 350px;
+    width: 350px;
+    border-color: rgb(245, 219, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 100px ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.datos{
+    width: 250px ;
+    height: 27px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-style: italic;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px
+
+}
+
+.titulos-registro{
+    margin-top: 50px;
+}
+
+.redes{
+    margin: 0;
+    padding: 0;
+}
+
+.redes-link{
+    text-decoration: none;
+    color: rgb(249, 221, 255);
+
+}
+
+.inicio{
+    text-decoration: none;
+    color: rgb(143, 108, 199);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-formulario{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-group{
+    width: 210px;
+    height: 60px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    width: 85px;
+    height: 40px;
+    margin:20px;
+}
+
+.checkbox{
+    width: 200px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-sin-grilla{
+    width: 100vw;
+    height: 72px;
+}
+
+/* guitarras y modelos--------------------------------------------------------------------- */
+
+.container-fluid{
+    padding: 0;
+}
+
+.img-guitarra1{
+    width: 450px;
+    height: 550px;
+    border-radius: 4px;
+}
+
+.img-guitarra2{
+    width: 450px;
+    height: 550px;
+}
+
+.row{
+    margin: 30px 0 0 30px;
+}
+
+
+
+.videos{
+    width: 400px;
+    height: 200px;
+}
+
+.contenedor-guitarras{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-introductorio{
+    width: 800px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: rgb(43, 0, 83);
+    padding: 50px;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.img-guitarra2{
+    margin-left: 0;
+    border-radius: 4px;
+}
+
+.materiales-gbs{
+    margin-left: 100px;
+}
+
+.videito-gibson{
+    width: 450px;
+}
+
+.img-guitarra3{
+    width: 450px;
+    height: 550px;
+}
+
+.title-guitarras {
+    margin: 30px;
+    text-decoration: underline;
+    font-size: large;
+    
+}
+/* novedades------------------------------------------------------------------------------------------- */
+
+.box-secciones-novedades{
+    width: 100vw;
+    height: 31px;
+    
+}
+
+.contenedor-novedades{
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.contenedor-noticia{
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.contenedor-videos-actuales{
+    width: 90%;
+    height: 500px;
+    background-color: rgb(146, 146, 146);
+    margin-top: 10px ;
+    border-radius: 4px;
+
+}
+
+.caja-noticia{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(173, 173, 173);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 30px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-video-noticia{
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.noticia1,.noticia2,.noticia3{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.vermas{
+    width: 100px;
+    margin: 20px 0 0 80px ;
+    background-color: rgb(231, 206, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
